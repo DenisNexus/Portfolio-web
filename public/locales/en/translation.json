@@ -1,0 +1,27 @@
+{
+    "menu":{
+        "home": "Home",
+        "about": "About",
+        "projects":"Projects",
+        "resume": "Resume"
+    },
+    "homepage":{
+        "title": "Hi There!",
+        "name": "My name is Burmistr Denis",
+        "subtitle":"I am a Frontend Developer"
+     },
+     "about":{
+        "title": "LET ME INTRODUCE MYSELF",
+        "text": "My name is Denis, I live in Ukraine, Kyiv. Graduated from Front - End Advance courses at ITEA School . At the moment I'm actively studying React and Next js.Plans to learn Node JS. To become a full-fledged Full stack developer."
+     },
+     "skills":{
+         "title": "My Skills"
+     },
+     "projects":{
+        "title": "My Projects"
+     },
+     "resume":{
+        "title": "CV",
+        "dow":"Download CV"
+     }
+}

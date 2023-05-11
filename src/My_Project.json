@@ -1,0 +1,40 @@
+{
+"arr":[
+    {"id":"1",
+    "title":"HUNGRY-PEOPLE" , 
+    "subtitle":"Landing. Mobile version of the site . HTML5 (BEM) CSS3(SCSS) JS",
+    "img":"/img/projects/1.png" , 
+    "urlGit":"https://github.com/DenisNexus/HUNGRY-PEOPLE" , 
+    "urlDemo":"https://denisnexus.github.io/HUNGRY-PEOPLE/"
+    },
+
+    {"id":"2",
+    "title":"Freebie-Gift-Store-Website",
+    "subtitle":"Landing .Mobile version of the site. HTML5(BEM). CSS3(SCSS). JS",
+    "img":"/img/projects/2.png" ,
+    "urlGit":"https://github.com/DenisNexus/Freebie-Gift-Store-Website", 
+    "urlDemo":"https://denisnexus.github.io/Freebie-Gift-Store-Website/"
+    },
+    {"id":"3",
+    "title":"projectDigiency" ,
+    "subtitle":"Landing .Mobile version of the site . Changing the theme to night. HTML5. CSS3. JS",
+    "img":"/img/projects/3.png" , 
+    "urlGit":"https://github.com/DenisNexus/projectDigiency" ,
+    "urlDemo":"https://denisnexus.github.io/projectDigiency/"
+    },
+    {"id":"4",
+    "title":"ToDo-List" , 
+    "img":"/img/projects/4.png",
+    "subtitle": "Simple ToDo-List. HTML5(BEM). CSS3(SCSS).Vue.JS",
+    "urlGit":"https://github.com/DenisNexus/ToDo-List" ,
+    "urlDemo":"#"},
+
+    {"id":"5",
+    "title":"Dashboard-Test" , 
+    "img":"/img/projects/5.png",
+    "subtitle": "HTML5. CSS3. JS",
+    "urlGit":"https://github.com/DenisNexus/Dashboard-Test" , 
+    "urlDemo":"#"}
+]
+}
+

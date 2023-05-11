@@ -1,0 +1,208 @@
+// Import SCSS reset------
+@import "utils/reset";
+
+// Font ------
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    background-image: url('home-bg.png');
+    background-position:top;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+.container{
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+.violet{
+    color: #cd5ff8;
+}
+
+.titile {
+    font-size: 45px;
+    text-align: center;
+}
+
+// Header -----
+.header{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo{
+        width: 135px;
+    }
+}
+
+.menu{
+    ul{
+        display: flex;
+        color:white;
+        a{
+          position:relative;
+          &:hover:after{
+             width:100%;
+          }
+        }
+        a:after{
+          content:'';
+          position:absolute;
+          height:3px;
+          border-radius: 15px;
+          width:0;
+          bottom:0;
+          left:0;
+          transition:200ms ease-in;
+          background:white;
+        }
+    }
+
+    &__item{
+        font-weight: 400;
+        font-size: 20px;
+        padding-left: 40px;
+    }
+
+    &__favicoLang{
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+
+    &__favico{
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+    }
+}
+
+// home style ------
+
+.home{
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 45px;
+    font-weight: 600;
+
+    &__name{
+        color: #cd5ff8;
+    }
+    &__subtitle{
+        padding-top: 50px;
+    }
+    &__img{
+        width: 600px;
+    }
+
+    &__wave{
+        width: 40px;
+        height: 40px;
+        animation-name: wave;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
+}
+
+@keyframes wave {
+    0% { transform: rotate(0); }
+    10% {transform: rotate(20deg);}
+    20% { transform: rotate(-8deg); }
+    30% { transform: rotate(20deg); }
+    40% { transform: rotate(-4deg); }
+    50% { transform: rotate(10deg); }
+    60% { transform: rotate(0deg); }
+    100% { transform: rotate(0); }
+}
+// about style ------
+
+.about {
+    &__wrapper {
+        padding: 80px 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__text {
+        font-size: 20px;
+        max-width: 700px;
+        padding-top: 20px;
+    }
+    &__img {
+        padding-right: 60px;
+    }
+}
+
+.skills {
+    padding-bottom: 150px;
+
+    &__wrapper{
+        width: 800px;
+        margin: 0 auto;
+        justify-content: space-between;
+        display: flex;
+    }
+    &__titile{
+        padding-bottom: 50px;
+    }
+
+    &__item {
+        text-align: center;
+        width: 80px;
+        height: 80px;
+    }
+
+    &__pic{
+        width: 80px;
+        height: 80px;
+    }
+
+    &__text{
+        font-size: 20px;
+        padding-top: 20px;
+    }
+}
+
+
+.projects {
+    &__titile {
+        padding-bottom: 50px;
+    }
+    &__cards {
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 20px;
+    }
+}
+
+// resume --
+.resume {
+    width: 50%;
+    margin: auto;
+    
+    &__dow{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    &__titile {
+        padding-bottom: 50px;
+    }
+
+    &__pic {
+        height: 30px;
+        width: 30px;
+}}
+// footer --
+.footer{
+    margin-top: 50px;
+    background-color: rgb(237, 234, 234);
+    text-align: center;
+    color: black;
+}
+
