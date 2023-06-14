@@ -99,15 +99,15 @@ const text = t("homepage.name");
               </div>
               </section>
               {/* <!-- Fourth section --> */}
-              {/* <section className="education"  id='education'>
+              <section className="education"  id='education'>
                 <h2 className="education__titile titile">{t("education.title")}</h2>
                 <div className='education__info'>
-                  <iframe title='top'src="https://drive.google.com/file/d/1cJVJQCt0-KDfjlZ-56BlDap-KLQi9hgA/preview" width="600" height="750" allow="autoplay"></iframe>
-                  <iframe title='top' src="https://drive.google.com/file/d/1wc6Lf1-DmlChdS4O49ZAcJFcYKw9w4x7/preview" width="600" height="750" allow="autoplay"></iframe>
+                  <iframe className='education__certificate' title='top'src="https://drive.google.com/file/d/1cJVJQCt0-KDfjlZ-56BlDap-KLQi9hgA/preview" width="600" height="750" allow="autoplay"></iframe>
+                  <iframe className='education__certificate' title='top' src="https://drive.google.com/file/d/1wc6Lf1-DmlChdS4O49ZAcJFcYKw9w4x7/preview" width="600" height="750" allow="autoplay"></iframe>
                 </div>
-              </section> */}
+              </section>
               {/* <!-- Fifth section --> */}
-              {/* <section className="resume"  id='resume'>
+              <section className="resume"  id='resume'>
                   <h2 className="resume__titile titile">{t("resume.title")}</h2>
                   <div className="resume__dow">
                     <a target="_blank" href="https://drive.google.com/file/d/1knxpLGjDP0IWW7gLfbhBLu284-GRdcgd/view">
@@ -115,8 +115,8 @@ const text = t("homepage.name");
                     {t("resume.dow")}
                       </a>
                     </div>
-                    <div className='resume__iframe'><iframe align="middle" src="https://drive.google.com/file/d/1knxpLGjDP0IWW7gLfbhBLu284-GRdcgd/preview" width="640" height="680" allow="autoplay"></iframe></div> 
-              </section> */}
+                    <div className='resume__iframe'><iframe className='education__certificate' title='top'  align="middle" src="https://drive.google.com/file/d/1knxpLGjDP0IWW7gLfbhBLu284-GRdcgd/preview" width="640" height="680" allow="autoplay"></iframe></div> 
+              </section>
           </main>
     </div>
     <Footer/>

@@ -40,6 +40,7 @@ body{
 
         @media screen and (max-width: 1024px) {
             font-size: 40px;
+            padding: 0;
         }
         @media screen and (max-width: 768px) {
             flex-direction: column;
@@ -63,6 +64,9 @@ body{
             align-items: center;
             width: 400px;
             padding-bottom: 30px;
+        }
+        @media screen and (max-width: 768px) {
+            width: 350px;
         }
     }
 
@@ -102,7 +106,7 @@ body{
         justify-content: space-between;
 
         @media screen and (max-width: 1024px) {
-            padding: 60px 15px;
+            padding: 60px 0;
         }
 
         @media screen and (max-width: 768px) {
@@ -118,6 +122,9 @@ body{
     }
     &__info{
         padding-right: 20px;
+        @media screen and (max-width: 768px) {
+            padding-right: 0;
+        }
     }
     &__img {
         padding-right: 60px;
@@ -137,12 +144,19 @@ body{
 .skills {
     padding-bottom: 150px;
 
+    @media screen and (max-width: 500px) {
+        padding-bottom: 80px;
+    }
     &__wrapper{
         max-width: 800px;
         margin: 0 auto;
         padding: 0 30px;
         justify-content: space-between;
         display: flex;
+        
+        @media screen and (max-width: 500px) {
+            flex-direction: column;
+        }
     }
     &__titile{
         padding-bottom: 50px;
@@ -157,6 +171,13 @@ body{
             width: 60px;
             height: 60px;
         }
+        @media screen and (max-width: 500px) {
+            width: 80px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }     
     }
 
     &__pic{
@@ -167,11 +188,21 @@ body{
             width: 60px;
             height: 60px;
         }
+        @media screen and (max-width: 500px) {
+            width: 80px;
+            height: 80px;
+        }
     }
 
     &__text{
         font-size: 20px;
         padding-top: 20px;
+
+        @media screen and (max-width: 500px) {
+            font-size: 22px;
+            margin-left: 20px;
+            padding-top: 0;
+        }
     }
 }
 
@@ -192,6 +223,10 @@ body{
  
 .education__titile{
     padding-bottom: 80px;
+
+    @media screen and (max-width: 768px) {
+        padding-bottom: 50px;
+    }
 }
 .education__info{
     display: flex;
@@ -199,7 +234,23 @@ body{
     padding-bottom: 120px;
 
     @media screen and (max-width: 768px) {
+
         flex-direction: column;
+        align-items: center;
+    }
+}
+
+.education__certificate{
+
+    @media screen and (max-width: 768px) {
+        width: 500px;
+        height: 700px;
+        margin-bottom: 40px;
+    }
+    @media screen and (max-width: 500px) {
+        width: 350px;
+        height: 490px;
+        margin-bottom: 40px;
     }
 }
 // resume --

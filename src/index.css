@@ -122,6 +122,7 @@ body {
 @media screen and (max-width: 1024px) {
   .home {
     font-size: 40px;
+    padding: 0;
   }
 }
 @media screen and (max-width: 768px) {
@@ -149,6 +150,11 @@ body {
     align-items: center;
     width: 400px;
     padding-bottom: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .home__img {
+    width: 350px;
   }
 }
 .home__wave {
@@ -200,7 +206,7 @@ body {
 }
 @media screen and (max-width: 1024px) {
   .about__wrapper {
-    padding: 60px 15px;
+    padding: 60px 0;
   }
 }
 @media screen and (max-width: 768px) {
@@ -217,6 +223,11 @@ body {
 }
 .about__info {
   padding-right: 20px;
+}
+@media screen and (max-width: 768px) {
+  .about__info {
+    padding-right: 0;
+  }
 }
 .about__img {
   padding-right: 60px;
@@ -237,12 +248,22 @@ body {
 .skills {
   padding-bottom: 150px;
 }
+@media screen and (max-width: 500px) {
+  .skills {
+    padding-bottom: 80px;
+  }
+}
 .skills__wrapper {
   max-width: 800px;
   margin: 0 auto;
   padding: 0 30px;
   justify-content: space-between;
   display: flex;
+}
+@media screen and (max-width: 500px) {
+  .skills__wrapper {
+    flex-direction: column;
+  }
 }
 .skills__titile {
   padding-bottom: 50px;
@@ -258,6 +279,15 @@ body {
     height: 60px;
   }
 }
+@media screen and (max-width: 500px) {
+  .skills__item {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+}
 .skills__pic {
   width: 80px;
   height: 80px;
@@ -268,9 +298,22 @@ body {
     height: 60px;
   }
 }
+@media screen and (max-width: 500px) {
+  .skills__pic {
+    width: 80px;
+    height: 80px;
+  }
+}
 .skills__text {
   font-size: 20px;
   padding-top: 20px;
+}
+@media screen and (max-width: 500px) {
+  .skills__text {
+    font-size: 22px;
+    margin-left: 20px;
+    padding-top: 0;
+  }
 }
 
 .projects__titile {
@@ -286,6 +329,11 @@ body {
 .education__titile {
   padding-bottom: 80px;
 }
+@media screen and (max-width: 768px) {
+  .education__titile {
+    padding-bottom: 50px;
+  }
+}
 
 .education__info {
   display: flex;
@@ -295,6 +343,22 @@ body {
 @media screen and (max-width: 768px) {
   .education__info {
     flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .education__certificate {
+    width: 500px;
+    height: 700px;
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .education__certificate {
+    width: 350px;
+    height: 490px;
+    margin-bottom: 40px;
   }
 }
 
