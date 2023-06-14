@@ -3,7 +3,8 @@
         "home": "Home",
         "about": "About",
         "projects":"Projects",
-        "resume": "Resume"
+        "resume": "Resume",
+        "education": "Education"
     },
     "homepage":{
         "title": "Hi There!",
@@ -23,5 +24,8 @@
      "resume":{
         "title": "CV",
         "dow":"Download CV"
+     },
+     "education":{
+      "title": "My Education"
      }
 }

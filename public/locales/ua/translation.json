@@ -3,7 +3,8 @@
         "home": "Головна",
         "about": "Про мене",
         "projects":"Проекти",
-        "resume": "Резюме"
+        "resume": "Резюме",
+        "education": "Освіта"
     },
     "homepage":{
         "title": "Вітаю!",
@@ -23,6 +24,9 @@
      "resume":{
         "title": "Резюме",
         "dow":"Завантажити резюме"
-     }
+     },
+     "education":{
+        "title": "Освіта"
+    }
 
 }

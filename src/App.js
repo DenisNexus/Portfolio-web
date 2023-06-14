@@ -3,16 +3,18 @@ import Project from './component/Project';
 import React, { useState, useEffect } from 'react';
 import {useTranslation} from 'react-i18next';
 import My_Project from './My_Project.json'
+import Header from './component/Header';
+import Footer from './component/Footer';
 
+// json substring
 const arr = My_Project.arr
 
-function App() {
-const {t,i18n} = useTranslation();
-  
-const changeLanguage = (lang) =>(
-    i18n.changeLanguage(lang)
-);
 
+function App() {
+  // language connection
+const {t} = useTranslation();
+  
+// Text Animation
 const text = t("homepage.name");
   const [index, setIndex] = useState(0);
   const delay = 80; 
@@ -25,43 +27,11 @@ const text = t("homepage.name");
       clearInterval(timerId);
     };
   }, [delay]);
-
+ 
   return (
     <div className="App">
         <div className="container">
-          <header className="header">
-              <img className="header__logo" src="/img/logo.png" alt="logo"/>
-              <nav className="menu">
-                  <ul className="first"> 
-                      <li className="menu__item">
-                        <img className="menu__favico" src="./img/header/home.svg" alt="home"/>
-                        <a href="#home" className="menu__link">{t("menu.home")}</a>
-                        </li>
-                      <li className="menu__item">
-                        <img className="menu__favico" src="./img/header/about.svg" alt="home"/>
-                        <a href="#about" className="menu__link">{t("menu.about")}</a>
-                        </li>
-                      <li className="menu__item">
-                        <img className="menu__favico" src="./img/header/projects.svg" alt="projects"/>
-                        <a href="#projects" className="menu__link">{t("menu.projects")}</a>
-                      </li>
-                      <li className="menu__item">
-                        <img className="menu__favico" src="./img/header/resume.svg" alt="resume"/>
-                        <a href="#resume" className="menu__link">{t("menu.resume")}</a>
-                    </li>
-                    <li className="menu__item">
-                    <button onClick={()=> changeLanguage("en")}>
-                    <img className="menu__favicoLang" src="./img/header/en.png" alt="en"/>
-                    </button>
-                    </li>
-                  <li className="menu__item">
-                    <button onClick={()=> changeLanguage("ua")}>
-                    <img className="menu__favicoLang" src="./img/header/ua.png" alt="ua"/>
-                      </button> 
-                    </li>
-                  </ul>
-              </nav>
-          </header>
+          <Header/>
           <main>
               {/* <!-- First srction --> */}
               <section className="home" id='home'>
@@ -70,7 +40,9 @@ const text = t("homepage.name");
                         <h2 className="home__name">{text.substring(0, index)}</h2>
                         <p className="home__subtitle">{t("homepage.subtitle")}</p>
                     </div>
-                    <img className="home__img" src="./img/home-main.svg" alt="men"/>
+                    <div className="home__img">
+                      <img src="./img/home-main.svg" alt="men"/>
+                    </div>
               </section>
               {/* <!-- Second section --> */}
               <section className="about" id='about'>
@@ -113,7 +85,7 @@ const text = t("homepage.name");
                     </div>
               </section>
               {/* <!-- Third section --> */}
-              <section classNameName="projects" id='projects'>
+              <section className="projects" id='projects'>
                 <h2 className="projects__titile titile">{t("projects.title")}</h2>
                 <div className="projects__cards">
                 {arr.map((obj)=>(<Project
@@ -127,21 +99,27 @@ const text = t("homepage.name");
               </div>
               </section>
               {/* <!-- Fourth section --> */}
-              <section className="resume"  id='resume'>
+              {/* <section className="education"  id='education'>
+                <h2 className="education__titile titile">{t("education.title")}</h2>
+                <div className='education__info'>
+                  <iframe title='top'src="https://drive.google.com/file/d/1cJVJQCt0-KDfjlZ-56BlDap-KLQi9hgA/preview" width="600" height="750" allow="autoplay"></iframe>
+                  <iframe title='top' src="https://drive.google.com/file/d/1wc6Lf1-DmlChdS4O49ZAcJFcYKw9w4x7/preview" width="600" height="750" allow="autoplay"></iframe>
+                </div>
+              </section> */}
+              {/* <!-- Fifth section --> */}
+              {/* <section className="resume"  id='resume'>
                   <h2 className="resume__titile titile">{t("resume.title")}</h2>
                   <div className="resume__dow">
                     <a target="_blank" href="https://drive.google.com/file/d/1knxpLGjDP0IWW7gLfbhBLu284-GRdcgd/view">
                     <img className="resume__pic" src="./img/favico/download.png" alt="GitHab-Link"/>
                     {t("resume.dow")}
                       </a>
-                    </div> 
-                    <iframe src="https://drive.google.com/file/d/1knxpLGjDP0IWW7gLfbhBLu284-GRdcgd/preview" width="640" height="680" allow="autoplay"></iframe>
-              </section>
+                    </div>
+                    <div className='resume__iframe'><iframe align="middle" src="https://drive.google.com/file/d/1knxpLGjDP0IWW7gLfbhBLu284-GRdcgd/preview" width="640" height="680" allow="autoplay"></iframe></div> 
+              </section> */}
           </main>
     </div>
-    <footer className="footer">
-        <p>© 2023</p>
-    </footer>
+    <Footer/>
     </div>
   );
 }
