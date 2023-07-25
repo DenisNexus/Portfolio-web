@@ -10,7 +10,9 @@ import Footer from './component/Footer';
 const arr = My_Project.arr
 
 
+
 function App() {
+
   // language connection
 const {t} = useTranslation();
   
@@ -28,6 +30,9 @@ const text = t("homepage.name");
     };
   }, [delay]);
  
+
+  // setIsloading(check())
+
   return (
     <div className="App">
         <div className="container">
@@ -80,6 +85,10 @@ const text = t("homepage.name");
                             <div className="skills__item">
                                 <img className="skills__pic" src="./img/skills/Bootstrap.webp" alt="bootstrap-pic"/>
                                 <p className="skills__text">Bootstrap</p>
+                            </div>
+                            <div className="skills__item">
+                                <img className="skills__pic" src="./img/skills/react.webp" alt="react-pic"/>
+                                <p className="skills__text">React</p>
                             </div>
                         </div>
                     </div>

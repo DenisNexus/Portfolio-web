@@ -9,14 +9,14 @@ function Project(props){
                 <p className="card__about">
                     {props.subtitle}
                 </p>
-                <div>  
+                <div className="card__btns">  
                     <button className="neon-btn neon-btn--purple">
                         <a target="_blank" href={props.urlGit}>
                         <img className="card__favico" src="./img/favico/github.png" alt="GitHab-Link"/>
                         <span>GitHab-Link</span>
                         </a>
                     </button>
-                    <button className="neon-btn neon-btn--purple">
+                     <button disabled={!props.urlDemo} className="neon-btn neon-btn--purple">
                         <a target="_blank" href={props.urlDemo}>
                             <img className="card__favico" src="./img/favico/demo.png" alt="Demo-Link"/>
                             <span>Demo-Link</span>

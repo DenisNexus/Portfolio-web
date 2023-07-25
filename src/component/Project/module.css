@@ -4,8 +4,12 @@
   border-radius: 20px;
   padding: 10px;
   margin: 0 20px 20px 0;
+  transition: 0.3s;
   flex: 0 0 auto;
   width: 33.33333333%;
+}
+.projects__card:hover {
+  transform: translateY(-5px);
 }
 @media screen and (max-width: 768px) {
   .projects__card {
@@ -16,6 +20,9 @@
 
 .card {
   width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .card__img {
   height: 200px;
@@ -46,6 +53,11 @@
   border-radius: 10px;
   transition: 0.2s;
 }
+.neon-btn:disabled {
+  background-color: #d3d3d3;
+  cursor: default;
+  transition: none;
+}
 
 .neon-btn--purple {
   color: white;
@@ -56,4 +68,10 @@
   color: #fff;
   border: 1px solid #f038ff;
   box-shadow: 10px 10px 100px 6px #f038ff;
+}
+.neon-btn--purple:hover:disabled {
+  background-color: #d3d3d3;
+  cursor: default;
+  border: 1px solid #d3d3d3;
+  box-shadow: none;
 }/*# sourceMappingURL=module.css.map */
